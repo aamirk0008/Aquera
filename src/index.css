@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+.planets-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.planet-card{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(0, 100, 133);
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 25px black;
+    cursor: pointer;
+    transition: .5s;
+}
+.planet-card:hover{
+    background-color: black;
+
+}
+.planet-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+h2{
+    font-size: 70px;
+}
+p{
+    font-size: 23px;
+    
+}
+h3{
+    font-size: 25px;
+}
+.residents-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem 1rem;
+}
+.name-list{
+    padding: 60px 12px;
+    width: 195px;
+    height: 200px;
+    background-color: rgb(28, 25, 25);
+    border-radius: 15px;
+    box-shadow: 0 0 35px black;
+    transition: .5s;
+    cursor: pointer;
+}
+.name-list:hover{
+    background-color: black;
+}
+.name-list h4{
+    font-size: 20px;
+}
+.name-list p{
+    font-size: 17px;
 }
